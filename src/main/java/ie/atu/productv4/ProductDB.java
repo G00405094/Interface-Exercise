@@ -68,6 +68,16 @@ public class ProductDB {
             p = myMusic;
         }
 
+        if (productCode.equalsIgnoreCase("kdl43")) {
+            TV myTV = new TV();
+            myTV.setCode(productCode);
+            myTV.setDescription("SONY BRAVIA SMART TV KDL43WF663");
+            myTV.setPrice(819.00);
+            myTV.setManufacture("Sony");
+            myTV.setScreen("55 inches");
+            p = myTV;
+        }
+
         return p;
     }
 }
